@@ -1,0 +1,18 @@
+mixin level()
+	+b.level
+		+e.INPUT.range(type="range" min="0" max="100" value="45")
+		+e.description
+			+b.box--first
+				+e.line--height-border
+				+e.text--offset-top Не владею
+			+b.box--second
+				+e.line
+				+e.text Использую готовые решения
+			+b.box--third
+				+e.line
+				+e.text 
+					|Использую готовые решения
+					|и умею их переделывать
+			+b.box--last
+				+e.line--height-border.--border-right
+				+e.text--offset-top Пишу сложный JS с нуля

@@ -1,0 +1,96 @@
+.fieldset
+	margin-top 48px
+
+	border none
+
+	&--mt-96
+		margin-top 96px
+
+	&__legend
+		font-size $font-size-legend
+		
+		font-weight bold
+	
+	&__desc		
+		padding 25px 0 13px
+		
+		line-height 23px
+		
+		color $color-description
+
+		&--pt-10
+			padding-top 10px
+
+		&--pt-13
+			padding-top 13px
+
+		&--pt-5
+			padding-top 5px
+
+	/* block width checkbox */
+
+	&__list
+		margin-bottom 6px
+		padding-top 10px
+
+		overflow hidden
+
+	&__column
+		float left
+		
+		width 33.1%
+
+		&--pl-15
+			padding-left 15px
+
+	&__colum-item
+		overflow hidden
+
+	&__link
+		padding-left 3px
+
+		font-size $font-size-link
+		font-weight bold
+		line-height 35px
+		
+		color $color-link
+
+		/* block width textare */
+
+	&__textarea
+
+		margin-top 4px 
+		width 100%
+		min-height 171px
+
+		font-family Courier New
+		font-size $font-size-textarea
+		line-height 62px
+
+		resize none
+
+		color $color-textarea
+		background-color inherit
+		background-image -moz-linear-gradient(top, transparent, transparent 53px, #3f241e)
+		background-image -webkit-linear-gradient(top, transparent, transparent 53px, #3f241e)
+		-webkit-background-size  100% 57px
+		background-size 100% 57px
+		border none
+
+		&::-webkit-input-placeholder 
+			color $color-textarea
+			
+		&::-moz-placeholder 
+			color $color-textarea
+	&__row
+		overflow hidden
+
+@media (max-width: 767px)
+	.fieldset
+		&__column
+			float none
+
+			width 100%
+			
+			&--pl-15
+				padding-left 0

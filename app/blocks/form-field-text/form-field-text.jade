@@ -1,0 +1,7 @@
+mixin form-field-text(title, content)
+	+b.LABEL.form-field-text
+		+e.SPAN.title-input #{title}
+		+e.DIV.row
+			+e.INPUT.input(type='text' value='#{content}')
+			
+			

@@ -1,0 +1,66 @@
+mixin content()
+	- set_bemto_settings({ modifier: '--' })
+	+b.FORM.content
+		+b.FIELDSET.fieldset
+			+form-field-text("Полное ФИО", "Баранова Вероника Валерьевна")
+			+form-field-text("Год рождения", "1991")
+			+form-field-text("Место жительства", "г. Красноярск, Россия")
+			+form-field-text("Скайп", "bananchik09")
+			+form-field-text("Почта", "baranova.veronika91@gmail.com")
+		+b.FIELDSET.fieldset
+			+e.LEGEND.legend Расскажите о себе чекбоксами
+			+e.P.desc--pt-10 Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать задачи, с которыми гарантировано будете справляться.
+			+e.list
+				+e.column
+					+form-field-checkbox("БЭМ/OOCSS", true)
+					+form-field-checkbox("Pug (Jade)", true)
+					+form-field-checkbox("Stylus/LESS/SASS", true)
+					+form-field-checkbox("Работаю с SVG", true)
+					+form-field-checkbox("Верстаю семантично", true)
+					+form-field-checkbox("Accessibility (A11Y)")
+					+form-field-checkbox("ES2015/ES2016")
+				+e.column
+					+e.colum-item
+						+form-field-checkbox("Gulp/GRUNT", true)
+					+e.colum-item
+						+form-field-checkbox("Webpack", true)
+					+e.colum-item
+						+form-field-checkbox("Дружу с WebGL")
+					+e.colum-item
+						+form-field-checkbox("jQuery", true)
+					+e.colum-item
+						+form-field-checkbox("Знаю/изучаю Angular")
+					+e.colum-item
+						+form-field-checkbox("Знаю/изучаю React")
+					+e.colum-item
+						+form-field-checkbox("Знаю/изучаю Node.js")
+				+e.column--pl-15
+					+e.colum-item
+						+form-field-checkbox("Использую Git", true)
+					+e.colum-item
+						+form-field-checkbox("С глазомером всё ок", true)
+					+e.colum-item
+						+form-field-checkbox("Читаю", true)(
+							class='form-field-checkbox--mod'
+						)
+						+e.A.link(href="http://blog.csssr.ru/") blog.csssr.ru
+					+e.colum-item
+						+form-field-checkbox("Я ленивый(-ая)")
+					+e.colum-item
+						+form-field-checkbox("У меня хороший английский")
+		+b.FIELDSET.fieldset
+			+e.LEGEND.legend Уровень владения JavaScript
+			+level()
+		+b.FIELDSET.fieldset--mt-96
+			+e.LEGEND.legend Расскижите о себе словами
+			+e.P.desc--pt-13 Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+			+e.TEXTAREA.textarea(id="comments" rows="3")
+				|Хочу поработать в большой и опытной команде и усовершенствовать навыки программирования.
+		+b.FIELDSET.fieldset
+			+e.LEGEND.legend Какие у вас планы на будущее?
+			+e.P.desc--pt-5 Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+			+e.row
+				+form-field-radio("Верстать", true)
+				+form-field-radio("Прокачиваться в JS")
+				+form-field-radio("Менеджерство")
+				+form-field-radio("Другое")

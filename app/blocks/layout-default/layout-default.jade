@@ -1,0 +1,23 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../page/page
+include ../scripts/scripts
+
+include ../main/main
+include ../header/header
+include ../content/content
+include ../footer/footer
+include ../logo/logo
+include ../form-field-chekbox/form-field-chekbox
+include ../form-field-text/form-field-text
+include ../form-field-radio/form-field-radio
+include ../level/level
+
+
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	+page
+		block content
+		+scripts(['app.min.js'])

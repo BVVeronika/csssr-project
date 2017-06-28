@@ -1,0 +1,41 @@
+.header
+	position relative
+	
+	margin-bottom 60px
+	padding-top 102px
+
+	display block
+
+	&__title
+		position relative
+		left -20px
+
+		margin auto
+
+		sprite $delo
+
+	&__stamp
+		position absolute
+		top -4px
+		right -62px
+
+		sprite $secret
+	
+@media (max-width: 1024px)
+	.header
+		&__stamp
+			top 0
+			right 0
+			
+@media (max-width: 425px)
+	.header
+		padding-top 140px
+
+		&__stamp
+			top 15px
+			left 0
+
+			margin auto
+
+		&__title
+			left 0

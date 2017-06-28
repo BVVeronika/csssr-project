@@ -1,0 +1,5 @@
+mixin form-field-checkbox(title, checked)
+	+b.LABEL.form-field-checkbox&attributes(attributes)
+		+e.INPUT.input(type="checkbox" checked=checked)
+		+e.SPAN.checkbox
+		+e.SPAN.title-checkbox #{title}

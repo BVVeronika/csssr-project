@@ -1,0 +1,52 @@
+.form-field-radio
+	position relative
+
+	margin-right 15px
+	padding-left 28px
+	padding-bottom 13px
+
+	display block
+	float left
+	
+	font-size $font-size-checkbox
+	font-weight bold
+	
+	color #000
+	
+	&__input
+		display none
+
+	&__radio
+		position absolute
+		top 2px
+		left 0
+		
+		display inline-block
+		
+		sprite $circlecheckbox
+
+	&__title-radio
+		margin-top 5px
+		margin-left 4px	
+
+		display inline-block
+		
+	&__input:checked+&__radio:after
+		position absolute
+		top 5px
+		left 0
+		
+		margin-right 10px
+
+		display  inline-block
+		
+		width 16px
+		height 16px
+
+		content ''
+
+		sprite $circleyes
+
+@media (max-width: 768px)
+	.form-field-radio
+		width 100%

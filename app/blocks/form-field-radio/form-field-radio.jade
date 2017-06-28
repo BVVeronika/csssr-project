@@ -1,0 +1,6 @@
+mixin form-field-radio(title, checked)
+	+b.LABEL.form-field-radio
+		+e.INPUT.input(type="radio" name="gender" checked=checked)
+		+e.SPAN.radio
+		+e.SPAN.title-radio #{title}
+

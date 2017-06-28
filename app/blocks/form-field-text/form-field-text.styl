@@ -1,0 +1,54 @@
+.form-field-text
+	margin-bottom 23px
+
+	display block
+
+	&__title-input
+		padding-top 13px
+		
+		float left
+
+		font-size $font-size-input-name
+		font-weight bold
+
+	&__row
+		overflow hidden
+	
+	&__input
+		margin-left 15px
+		padding 2px 15px
+		
+		width 100%
+		
+		font-family Courier New
+		font-size $font-size-input-text
+		font-weight 400
+		line-height 31px
+		color $color-input-text
+		
+		background inherit
+		border none
+		border-bottom 3px solid $color-border
+		-moz-border-image url(/line.png) 3 round round
+		-webkit-border-image url(/line.png) 3 round round
+		-o-border-image url(/line.png) 3 round round
+
+@media (max-width: 768px)
+	.form-field-text 
+		&__input
+			margin-top 7px
+			margin-left 0
+			padding 2px 0
+
+		&__row
+			overflow initial
+
+@media (max-width: 545px)
+	.form-field-text
+		&__input 
+			font-size 20px
+
+@media (max-width: 386px)
+	.form-field-text
+		&__input 
+			font-size 16px

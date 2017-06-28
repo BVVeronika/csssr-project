@@ -1,0 +1,50 @@
+.form-field-checkbox
+	position relative
+
+	padding-left 28px
+	padding-bottom 6px
+
+	display flex
+	
+	font-size $font-size-checkbox
+	font-weight bold
+	
+	color #000
+
+	&--mod
+		float left
+	
+	&__input
+		display none
+
+	&__checkbox
+		position absolute
+		top 8px
+		left 0
+		
+		display inline-block
+		
+		sprite $checkbox
+
+	&__title-checkbox
+		margin-top 6px
+
+		line-height 23px
+		
+	&__input:checked+&__checkbox:after
+		position absolute
+		top -7px
+		left 0
+		
+		margin-right 10px
+
+		display  inline-block
+		
+		width 16px
+		height 16px
+
+		content ''
+
+		sprite $yes
+				
+	
